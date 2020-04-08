@@ -1,20 +1,15 @@
-class GameSprite {
+#include "GameSprite.h"
 
-    protected:
-        bool renderSprite = false;
-        double x;
-        double y = 0;
-
-
-    public:
-        virtual void render() = 0;
-
-    
-
-    
+GameSprite::GameSprite(double x, double y) {
+    this->x = x;
+    this->y = y;
+}
 
 
+int GameSprite::getX() {
+    return this->x;
+}
 
-
-
-};
+int GameSprite::getY() {
+    return this->y;
+}

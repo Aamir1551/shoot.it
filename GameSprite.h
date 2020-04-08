@@ -1,5 +1,6 @@
-#ifndef HEADER_FILE
-#define HEADER_FILE
+#ifndef GameSprite_H
+#define GameSprite_H
+
 class GameSprite {
 
     protected:
@@ -9,8 +10,10 @@ class GameSprite {
 
 
     public:
-        virtual void render() = 0;
+        GameSprite(double x, double y); 
+        virtual void updateXY(double dx, double dy);
+        int getX();
+        int getY();
 
 };
-
 #endif
